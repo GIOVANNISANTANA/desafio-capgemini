@@ -11,15 +11,15 @@ public class Quest_01 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);    // declarando a classe Scanner
-        int aux = 0;    //declaração de variaveis
+        Scanner input = new Scanner(System.in);     // declarando a classe Scanner
+        int aux = 0;                                //declaração de variaveis
         int mediana;    
         int qtd;
             
         System.out.println("Digite a quantidade de itens que tera a lista, apenas um numero impar eh valido: ");    //entrada da quantidade de entradas
         qtd = input.nextInt();
         
-        if(qtd % 2 == 0){           //verifica se o numero digitado foi impar, caso contrario dara mais uma chance antes de encerrar o programa
+        if(qtd % 2 == 0){                           //verifica se o numero digitado foi impar, caso contrario dara mais uma chance antes de encerrar o programa
             System.out.println("Digite novamente a quantidade de itens que tera a lista, apenas um numero impar eh valido: ");
             qtd = input.nextInt();
             if(qtd % 2 == 0){
@@ -28,9 +28,9 @@ public class Quest_01 {
             }
         }
         
-        int arr[]= new int[qtd];    //declarando vetor após saber a quantidade de indice que ele terá
+        int arr[]= new int[qtd];                    //declarando vetor apos saber a quantidade de indice que ele tera
         
-        for(int q = 0; q < qtd; q++){   //loop para adicionar valores aos vetores
+        for(int q = 0; q < qtd; q++){               //loop para adicionar valores aos vetores
            System.out.println("Digite o valor de indice " + (q+1)); 
            arr[q] = input.nextInt();
         }
@@ -46,9 +46,9 @@ public class Quest_01 {
                 }
             }
             
-            mediana = arr[arr.length/2];        //como a mediana é o valor que fica ao meio, divide-se o indice por 2 para ter o indice do meio
+            mediana = arr[arr.length/2];            //como a mediana eh o valor que fica ao meio, divide-se o indice por 2 para ter o indice do meio
             
-            System.out.println("\n" + mediana); //impressao da variavel mediana
+            System.out.println("\n" + mediana);     //impressao da variavel mediana
     }
 
     
